@@ -2,6 +2,10 @@
 eLearning platform to learn languages
 
 
+## run local
+```
+make run-local
+```
 
 ## Build and push docker image version to artifact registry
 ```
