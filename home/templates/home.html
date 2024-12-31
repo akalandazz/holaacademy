@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
 
 {% block title %} Home {% endblock %} 
 
@@ -14,4 +19,10 @@
 <footer>
     <p>&copy; 2024 My Website</p>
 </footer>
+{% endblock %}
+
+
+
+{% block extra_js %}
+    <script src="{% static 'js/home.js' %}"></script>
 {% endblock %}
