@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %} Thank you {% endblock %}
 
@@ -7,7 +8,7 @@
 <section class="py-16 bg-gray-900 font-roboto flex items-center justify-center min-h-screen">
     <div class="container mx-auto px-4 bg-gray-800 p-4 rounded-lg shadow-lg text-center">
         <img alt="A checkmark icon indicating success" class="mx-auto mb-4" height="100"
-            src="https://storage.googleapis.com/a1aa/image/eTk3kkJWffTZApjBFkeH2rQg5huzzvkqPMWrbEeValrUrTRgC.jpg"
+            src="{% static 'images/contactSuccess.jpg' %}"
             width="100" />
         <h1 class="text-2xl font-bold  mb-2">
             Success!
