@@ -2,27 +2,118 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
 {% endblock %}
 
-{% block title %} Home {% endblock %} 
+{% block title %} Learn Languages with Ease {% endblock %}
 
 
 
 {% block content %}
-<header>
-    <h1>Welcome to My Basic HTML Page</h1>
+<header class="bg-gray-900 text-center py-20">
+    <div class="container mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Learn Languages with Ease
+        </h1>
+        <p class="text-lg md:text-2xl mb-8">
+            Join millions of learners from around the world.
+        </p>
+        <a class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300" href="#">
+            Get Started
+        </a>
+    </div>
 </header>
-<main>
-    <p> This is home page </p>
-</main>
-<footer>
-    <p>&copy; 2024 My Website</p>
-</footer>
+<section class="py-20">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold">
+                Our Courses
+            </h2>
+            <p class="text-gray-400 mt-4">
+                Explore a variety of courses designed to help you master new languages.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img alt="Course image showing a person learning Spanish with a book and a flag of Spain"
+                    class="h-40 w-full object-cover rounded-t-lg" height="300"
+                    src="https://storage.googleapis.com/a1aa/image/ReoL5mR3PekoU0I3eQsfZIRsr6uRzvEh1IosaSubzTdF8mIQB.jpg"
+                    width="400" />
+                <h3 class="text-xl font-bold mt-4">
+                    Spanish for Beginners
+                </h3>
+                <p class="text-gray-400 mt-2">
+                    Start your journey with the basics of Spanish.
+                </p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img alt="Course image showing a person learning French with a book and a flag of France"
+                    class="h-40 w-full object-cover rounded-t-lg" height="300"
+                    src="https://storage.googleapis.com/a1aa/image/FcOMmCDysZKYCVty7eeRYE4cFh5gLIaYvzJM8GjNog4HvJCUA.jpg"
+                    width="400" />
+                <h3 class="text-xl font-bold mt-4">
+                    French for Beginners
+                </h3>
+                <p class="text-gray-400 mt-2">
+                    Start your journey with the basics of French.
+                </p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <img alt="Course image showing a person learning Japanese with a book and a flag of Japan"
+                    class="h-40 w-full object-cover rounded-t-lg" height="300"
+                    src="https://storage.googleapis.com/a1aa/image/uXLTZ3I9ZqquC1Qqb8XqXjhKVbNqWHQv0J1H8O5rOwfh3EBKA.jpg"
+                    width="400" />
+                <h3 class="text-xl font-bold mt-4">
+                    Japanese for Beginners
+                </h3>
+                <p class="text-gray-400 mt-2">
+                    Start your journey with the basics of Japanese.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Why Choose Us?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="text-center">
+                <i class="fas fa-rocket text-6xl text-blue-500 mb-4">
+                </i>
+                <h3 class="text-2xl font-bold mb-2">
+                    Innovative Methods
+                </h3>
+                <p>
+                    We use the latest technology and teaching methods to ensure you learn efficiently.
+                </p>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-users text-6xl text-blue-500 mb-4">
+                </i>
+                <h3 class="text-2xl font-bold mb-2">
+                    Community Support
+                </h3>
+                <p>
+                    Join a community of learners and get support from peers and instructors.
+                </p>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-certificate text-6xl text-blue-500 mb-4">
+                </i>
+                <h3 class="text-2xl font-bold mb-2">
+                    Certified Courses
+                </h3>
+                <p>
+                    Our courses are certified and recognized globally.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
 
-
-
 {% block extra_js %}
-    <script src="{% static 'js/home.js' %}"></script>
+<script src="{% static 'js/home.js' %}"></script>
 {% endblock %}
