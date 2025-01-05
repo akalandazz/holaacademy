@@ -1,11 +1,103 @@
 {% extends "base.html" %}
 
-{% block title %} About Us {% endblock %} 
+{% block title %} About Us {% endblock %}
 
 
 
 {% block content %}
-<header>
-    <h1>This is about us page</h1>
-</header>
+<section class="relative h-96 flex items-center justify-center">
+    <img alt="Trustful learning platform with students and teachers collaborating"
+        class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080"
+        src="https://storage.googleapis.com/a1aa/image/DhJzCUk4fzWLLyUUpZnkSdQiPMo5mnVujK4bFHhx76CyDFBKA.jpg"
+        width="1920" />
+    <div class="relative z-10 text-center fade-in">
+        <h1 class="text-5xl font-bold mb-4">
+            About Us
+        </h1>
+        <p class="text-xl mb-8">
+            Discover our mission, vision, and the team behind LangLearn.
+        </p>
+    </div>
+</section>
+<section class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Our Mission
+        </h2>
+        <p class="text-center text-xl mb-8">
+            At LangLearn, our mission is to make language learning accessible, engaging, and effective for everyone. We
+            believe in the power of language to connect people and cultures, and we strive to provide the best tools and
+            resources to help you achieve your language learning goals.
+        </p>
+    </div>
+</section>
+<section class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Our Vision
+        </h2>
+        <p class="text-center text-xl mb-8">
+            Our vision is to be the leading platform for language learning, recognized globally for our innovative
+            methods, comprehensive courses, and supportive community. We aim to empower individuals to communicate
+            confidently in multiple languages and to foster a more connected and understanding world.
+        </p>
+    </div>
+</section>
+<section class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Meet the Team
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-700 p-6 rounded-lg slide-in">
+                <img alt="Portrait of John Doe, CEO of LangLearn" class="w-full h-40 object-cover mb-4 rounded"
+                    height="200"
+                    src="https://storage.googleapis.com/a1aa/image/WmOMPF7RVeQ7Da8fOXITdmQfV6fePf15ky81SerEXtKDxDFBKA.jpg"
+                    width="300" />
+                <h3 class="text-2xl font-bold mb-2">
+                    John Doe
+                </h3>
+                <p class="mb-4">
+                    CEO
+                </p>
+                <p>
+                    John is a visionary leader with a passion for language learning and technology. He founded LangLearn
+                    to help people connect through language.
+                </p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg slide-in">
+                <img alt="Portrait of Jane Smith, CTO of LangLearn" class="w-full h-40 object-cover mb-4 rounded"
+                    height="200"
+                    src="https://storage.googleapis.com/a1aa/image/fz66FsksV80BKCRkUb2kWRw1vTAIuOvfeG0y74FBZ58RPUEoA.jpg"
+                    width="300" />
+                <h3 class="text-2xl font-bold mb-2">
+                    Jane Smith
+                </h3>
+                <p class="mb-4">
+                    CTO
+                </p>
+                <p>
+                    Jane is the tech genius behind LangLearn's innovative platform. She ensures that our technology is
+                    cutting-edge and user-friendly.
+                </p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg slide-in">
+                <img alt="Portrait of Emily Johnson, Head of Curriculum at LangLearn"
+                    class="w-full h-40 object-cover mb-4 rounded" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/3p4y1ComehwqfEqmsZ8LTdBhDdGVjsb9RTtnxDm6xd9mHKCUA.jpg"
+                    width="300" />
+                <h3 class="text-2xl font-bold mb-2">
+                    Emily Johnson
+                </h3>
+                <p class="mb-4">
+                    Head of Curriculum
+                </p>
+                <p>
+                    Emily is an expert in language education. She designs our courses to be engaging, effective, and
+                    fun.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
