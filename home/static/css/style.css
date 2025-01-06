@@ -1,3 +1,132 @@
+/* Montserrat */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-display: swap;
+}
+
+/* Unbounded */
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+:root {
+  --font-family: "Montserrat";
+  --font-unbounded: "Unbounded";
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family);
+}
+
+.f-unbounded {
+  font-family: "Unbounded";
+}
+
+/* HEADER */
+
+.header-nav {
+  transform: translateY(-100%);
+  transition: 0.6s ease-in-out;
+}
+
+.header-nav.active {
+  transform: translateY(0%);
+}
+
+.preloader.active {
+  transform: translateY(-100%);
+}
+
+.preloader img {
+  height: 120px;
+  width: 120px;
+}
+
+.preloader {
+  transform: scale(1); 
+  opacity: 1;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
+}
+
+.preloader.active {
+  opacity: 0; 
+  transform: scale(1.4); 
+  pointer-events: none;
+}
+
+
+@media (max-width: 440px) {
+  .preloader img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.preloader-title {
+  font-size: clamp(0.875rem, 0.417rem + 1.67vw, 1.75rem);
+}
+
+.wrapper {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Добавление плавного перехода */
+}
+
+.wrapper.active {
+  opacity: 1;
 }
