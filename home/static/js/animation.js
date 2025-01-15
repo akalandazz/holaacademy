@@ -21,3 +21,4 @@ window.addEventListener("load", function () {
     }
   }, 500); // 2000 мс = 2 секунды
 });
+

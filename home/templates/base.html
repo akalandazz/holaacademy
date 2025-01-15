@@ -14,28 +14,21 @@
     {% block extra_css %}
     {% endblock %}
 
-    
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
 </head>
 
 <body class="bg-gray-900 text-white">
+
     <div class="preloader fixed inset-0 z-50 bg-[#1f2937] flex flex-col items-center justify-center">
-        <img alt="Logo of the language learning platform, a futuristic globe with various language symbols"
-             class="h-10 w-10 mr-2"
-             height="50"
-             src="../static/images/preloader.png"
-             width="50" />
-        <h2 class="f-unbounded preloader-title">HolaAcademy</h2>
+        <img alt="Logo of the language learning platform, a futuristic globe with various language symbols" class="h-10 w-10 mr-2" height="50" src="../static/images/preloader.png" width="50" />
     </div>
-    
+
 
     <div class="wrapper">
         <nav class="bg-gray-800 shadow-md header-nav">
             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div class="flex items-center">
-                    <img alt="Logo of the language learning platform, a futuristic globe with various language symbols"
-                        class="h-10 w-10 mr-2" height="50"
-                        src="https://storage.googleapis.com/a1aa/image/tRywdtcCMe3lFSU1wxe1wAnsQGIIqsbNaUbLDmIERaKFvJCUA.jpg"
-                        width="50" />
+                    <img alt="Logo of the language learning platform, a futuristic globe with various language symbols" class="h-10 w-10 mr-2" height="50" src="../static/images/preloader.png" width="80" />
                     <span class="text-xl font-bold text-white">
                         HolaAcademy
                     </span>
@@ -78,12 +71,10 @@
                 <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300" href="#">
                     Courses
                 </a>
-                <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300"
-                    href="{% url 'home:about' %}">
+                <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300" href="{% url 'home:about' %}">
                     About Us
                 </a>
-                <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300"
-                    href="{% url 'home:contact' %}">
+                <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300" href="{% url 'home:contact' %}">
                     Contact
                 </a>
                 <a class="block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-300" href="#">
@@ -91,13 +82,12 @@
                     </i>
                     Login
                 </a>
-                <a class="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
-                    href="#">
+                <a class="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300" href="#">
                     Sign Up
                 </a>
             </div>
         </nav>
-    
+
         {% block content %}
         {% endblock %}
         <footer class="bg-gray-800 py-8">
@@ -125,24 +115,137 @@
                 </div>
             </div>
         </footer>
-    
-         <!-- Подключаем GSAP -->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-        
-         <!-- Подключаем плагин ScrollToPlugin -->
-         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-         
-         <!-- Подключаем плагин TextPlugin -->
-         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js" integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-       
-         <!-- Подключаем плагин ScrollTrigger -->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+
+        <!-- Подключаем GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+        <!-- Подключаем плагин ScrollToPlugin -->
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Подключаем плагин TextPlugin -->
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js" integrity="sha512-xAxjKW1J/R4TFytv43xvQ7jFTrJlBzsDOH/Aw0fFc2nvarQkE3d08lTicjzUsZJYDoHYDCpwsUUqOJXh34A1sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Подключаем плагин ScrollTrigger -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <script defer src="../static/js/scrollTrigger.js"></script>
         <script defer src="../static/js/animation.js"></script>
-       
+        <!-- <script defer src="../static/js/wave.js"></script> -->
+
         <script src="{% static 'js/script.js' %}"></script>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.1.0/dist/simpleParallax.min.js"></script>
+        <script>
+            // Ensure the GSAP and ScrollTrigger plugins are loaded
+            gsap.registerPlugin(ScrollTrigger);
+
+            gsap.from(".about-card", {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                ease: "power2.out",
+                stagger: 0.3, // задержка между анимациями всех элементов
+                scrollTrigger: {
+                    trigger: ".about-card", // привязка к первому элементу, чтобы срабатывал ScrollTrigger
+                    start: "top 80%", // когда верх элемента достигает 80% высоты окна
+                    toggleActions: "play none none none",
+                },
+            });
+        </script>
+        
+        <script>
+            const images = document.querySelectorAll(".parallax-img");
+    
+            new simpleParallax(images, {
+                delay: 3.8, 
+                transition: "cubic-bezier(0,0,0,1)", 
+                orientation: "down", 
+                scale: 1.6, 
+            });
+        </script>
+
+        <script>
+            // Ensure the GSAP and ScrollTrigger plugins are loaded
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Анимация для изображения и текста в секции Contact Us
+            gsap.from(".contact-img", {
+                opacity: 0,
+                scale: 1.1,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".contact-section",
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                },
+            });
+
+            gsap.from(".contact-text", {
+                opacity: 0,
+                y: 30,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".contact-section",
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                },
+            });
+
+            // Анимация заголовка и подзаголовка
+            gsap.from(".contact-title", {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".contact-title",
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                },
+            });
+
+            gsap.from(".contact-subtitle", {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                delay: 0.2, // задержка для подзаголовка
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".contact-subtitle",
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                },
+            });
+
+            // Анимация формы
+            gsap.from(".contact-form", {
+                opacity: 0,
+                y: 30,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".contact-form-section",
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                },
+            });
+
+            // Анимация заголовка формы
+            gsap.from(".contact-form-title", {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                delay: 0.3, // задержка для заголовка формы
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".contact-form-title",
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                },
+            });
+        </script>
         {% block extra_js %}
         {% endblock %}
     </div>

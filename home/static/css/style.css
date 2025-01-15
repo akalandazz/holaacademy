@@ -71,14 +71,27 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--font-family);
 }
 
 .f-unbounded {
   font-family: "Unbounded";
 }
-
+ 
 /* HEADER */
+
+header {
+  height: 95vh;
+  position: relative;
+}
+
+.header-content {
+  position: relative;
+  z-index: 3;
+  top: 40%;
+  transform: translateY(-50%);
+}
 
 .header-nav {
   transform: translateY(-100%);
@@ -99,23 +112,20 @@ body {
 }
 
 .preloader {
-  transform: scale(1); 
+  transform: scale(1);
   opacity: 1;
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .preloader.active {
-  opacity: 0; 
-  transform: scale(1.4); 
+  opacity: 0;
+  transform: scale(1.4);
   pointer-events: none;
 }
 
-
-@media (max-width: 440px) {
-  .preloader img {
-    height: 80px;
-    width: 80px;
-  }
+.hero {
+  position: relative;
+  height: 100vh;
 }
 
 .preloader-title {
@@ -130,3 +140,43 @@ body {
 .wrapper.active {
   opacity: 1;
 }
+
+/* wave */
+
+.video-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-header::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.video-header video {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* about */
+
+.text-item-about {
+  opacity: 0; 
+  transition: 0.6s ease-in-out;
+  transform: translateY(250px); 
+}
+
